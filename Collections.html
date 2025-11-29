@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Whispered Strokes | Collections</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"/>
+       <!-- Favicon -->
+  <link rel="icon" type="image/png" href="./assets/logo.png">
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav>
+      <aside id="nav_one">
+        <img
+          src="./assets/logo.png"
+          alt="Whispered Strokes Logo"
+          height="90"
+          width="80"
+        />
+        <h1>Whispered Strokes 🎨 by Sab 👩</h1>
+      </aside>
+      <aside id="nav_two">
+        <a href="./home.html"><i class="fa-solid fa-house"></i> Home</a>
+        <a href="./about.html"><i class="fa-solid fa-user"></i> About</a>
+        <a href="./Collections.html"
+          ><i class="fa-solid fa-palette"></i> Collections</a
+        >
+        <a href="./contact.html"><i class="fa-solid fa-phone"></i> Contact</a>
+      </aside>
+      <aside id="nav_three">
+        <i id="cart_icon" class="fa-solid fa-cart-shopping"></i>
+        <div id="cart_quantity">0</div>
+        <span id="cart_price">₹0.00</span>
+      </aside>
+    </nav>
+
+    <aside id="sidebar">
+      <section id="sidebar_one">
+        <h1>Cart</h1>
+        <p id="close_sidebar">X</p>
+      </section>
+      <hr />
+      <br>
+      <section id="sidebar_collections"></section>
+      <!-- <p>Total Quantity: <span id="cart_quantity">0</span></p>
+      <p>Total Price: <span id="cart_price">₹0.00</span></p> -->
+    </aside>
+
+    <!-- Filter Buttons -->
+    <section id="Collections_filter">
+      <h1>My Collections</h1>
+      <div id="filter_btns">
+        <button class="active" onclick="filterItems('All', event)">All</button>
+        <button onclick="filterItems('watercolor', event)">
+          Watercolor Paintings
+        </button>
+        <button onclick="filterItems('acrylic', event)">
+          Acrylic Paintings
+        </button>
+        <button onclick="filterItems('charcoal', event)">
+          Charcoal Sketches
+        </button>
+        <button onclick="filterItems('pencil', event)">Pencil Sketches</button>
+      </div>
+    </section>
+
+    <!-- Collection Items -->
+    <section id="collection_items">
+      <div class="card watercolor">
+        <article class="card_one">
+          <aside class="card_img">
+            <img
+              src="./assets/watercolor-1.png"
+              alt="Watercolor Painting - Lake Misty View"
+            />
+          </aside>
+          <aside class="card_info">
+            <h2>A Lake Misty View</h2>
+            <p>₹800.00/-</p>
+          </aside>
+        </article>
+        <article class="card_two">
+          <aside class="card_quantity">
+            <div class="minus">-</div>
+            <div class="quantity">0</div>
+            <div class="plus">+</div>
+          </aside>
+          <aside class="addToCart"><button>Add To Cart</button></aside>
+        </article>
+      </div>
+      <div class="card watercolor">
+        <article class="card_one">
+          <aside class="card_img">
+            <img
+              src="./assets/watercolor-2.png"
+              alt="Watercolor Painting - Forest Reflection"
+            />
+          </aside>
+          <aside class="card_info">
+            <h2>A Mirroric View by Forest</h2>
+            <p>₹1000.00/-</p>
+          </aside>
+        </article>
+        <article class="card_two">
+          <aside class="card_quantity">
+            <div class="minus">-</div>
+            <div class="quantity">0</div>
+            <div class="plus">+</div>
+          </aside>
+          <aside class="addToCart"><button>Add To Cart</button></aside>
+        </article>
+      </div>
+      <div class="card watercolor">
+        <article class="card_one">
+          <aside class="card_img">
+            <img src="./assets/watercolor-3.png" alt="Country side view" />
+          </aside>
+          <aside class="card_info">
+            <h2>Country side view</h2>
+            <p>₹1100.00/-</p>
+          </aside>
+        </article>
+        <article class="card_two">
+          <aside class="card_quantity">
+            <div class="minus">-</div>
+            <div class="quantity">0</div>
+            <div class="plus">+</div>
+          </aside>
+          <aside class="addToCart"><button>Add To Cart</button></aside>
+        </article>
+      </div>
+      <div class="card watercolor">
+        <article class="card_one">
+          <aside class="card_img">
+            <img
+              src="./assets/watercolor-4.png"
+              alt="Waterfall view between the Rocks"
+            />
+          </aside>
+          <aside class="card_info">
+            <h2>Waterfall view between the Rocks</h2>
+            <p>₹900.00/-</p>
+          </aside>
+        </article>
+        <article class="card_two">
+          <aside class="card_quantity">
+            <div class="minus">-</div>
+            <div class="quantity">0</div>
+            <div class="plus">+</div>
+          </aside>
+          <aside class="addToCart"><button>Add To Cart</button></aside>
+        </article>
+      </div>
+      <div class="card watercolor">
+        <article class="card_one">
+          <aside class="card_img">
+            <img src="./assets/watercolor5.png" alt="eggs and avacado" />
+          </aside>
+          <aside class="card_info">
+            <h2>A yummy breakfast</h2>
+            <p>₹1100.00/-</p>
+          </aside>
+        </article>
+        <article class="card_two">
+          <aside class="card_quantity">
+            <div class="minus">-</div>
+            <div class="quantity">0</div>
+            <div class="plus">+</div>
+          </aside>
+          <aside class="addToCart"><button>Add To Cart</button></aside>
+        </article>
+      </div>
+      <div class="card acrylic">
+        <article class="card_one">
+          <aside class="card_img">
+            <img
+              src="./assets/acrylic-1.png"
+              alt="Sunset view in the middle of the sea"
+            />
+          </aside>
+          <aside class="card_info">
+            <h2>Sunset view in the middle of the sea</h2>
+            <p>₹1500.00/-</p>
+          </aside>
+        </article>
+        <article class="card_two">
+          <aside class="card_quantity">
+            <div class="minus">-</div>
+            <div class="quantity">0</div>
+            <div class="plus">+</div>
+          </aside>
+          <aside class="addToCart"><button>Add To Cart</button></aside>
+        </article>
+      </div>
+      <div class="card acrylic">
+        <article class="card_one">
+          <aside class="card_img">
+            <img
+              src="./assets/acrylic-2.png"
+              alt="Man capturing the beauty of Sunset"
+            />
+          </aside>
+          <aside class="card_info">
+            <h2>Man capturing the beauty of Sunset</h2>
+            <p>₹2000.00/-</p>
+          </aside>
+        </article>
+        <article class="card_two">
+          <aside class="card_quantity">
+            <div class="minus">-</div>
+            <div class="quantity">0</div>
+            <div class="plus">+</div>
+          </aside>
+          <aside class="addToCart"><button>Add To Cart</button></aside>
+        </article>
+      </div>
+      <div class="card acrylic">
+        <article class="card_one">
+          <aside class="card_img">
+            <img
+              src="./assets/acrylic-3.png"
+              alt="A vibrant CountrySide in the Spring"
+            />
+          </aside>
+          <aside class="card_info">
+            <h2>A vibrant CountrySide in the Spring</h2>
+            <p>₹2500.00/-</p>
+          </aside>
+        </article>
+        <article class="card_two">
+          <aside class="card_quantity">
+            <div class="minus">-</div>
+            <div class="quantity">0</div>
+            <div class="plus">+</div>
+          </aside>
+          <aside class="addToCart"><button>Add To Cart</button></aside>
+        </article>
+      </div>
+      <div class="card acrylic">
+        <article class="card_one">
+          <aside class="card_img">
+            <img src="./assets/acrylic4.png" alt="An Asethic anime city View" />
+          </aside>
+          <aside class="card_info">
+            <h2>An Aesethic anime city View</h2>
+            <p>₹1800.00/-</p>
+          </aside>
+        </article>
+        <article class="card_two">
+          <aside class="card_quantity">
+            <div class="minus">-</div>
+            <div class="quantity">0</div>
+            <div class="plus">+</div>
+          </aside>
+          <aside class="addToCart"><button>Add To Cart</button></aside>
+        </article>
+      </div>
+      <div class="card acrylic">
+        <article class="card_one">
+          <aside class="card_img">
+            <img
+              src="./assets/acrylic-5.png"
+              alt="An Aesethic workholic moment"
+            />
+          </aside>
+          <aside class="card_info">
+            <h2>An Aesethic workholic moment</h2>
+            <p>₹3500.00/-</p>
+          </aside>
+        </article>
+        <article class="card_two">
+          <aside class="card_quantity">
+            <div class="minus">-</div>
+            <div class="quantity">0</div>
+            <div class="plus">+</div>
+          </aside>
+          <aside class="addToCart"><button>Add To Cart</button></aside>
+        </article>
+      </div>
+      <div class="card charcoal">
+        <article class="card_one">
+          <aside class="card_img">
+            <img src="./assets/charcoal-1.png" alt="My pretty cat" />
+          </aside>
+          <aside class="card_info">
+            <h2>My pretty cat</h2>
+            <p>₹2300.00/-</p>
+          </aside>
+        </article>
+        <article class="card_two">
+          <aside class="card_quantity">
+            <div class="minus">-</div>
+            <div class="quantity">0</div>
+            <div class="plus">+</div>
+          </aside>
+          <aside class="addToCart"><button>Add To Cart</button></aside>
+        </article>
+      </div>
+      <div class="card charcoal">
+        <article class="card_one">
+          <aside class="card_img">
+            <img src="./assets/charcoal-2.png" alt="A cute baby cheetah" />
+          </aside>
+          <aside class="card_info">
+            <h2>A cute baby cheetah</h2>
+            <p>₹3000.00/-</p>
+          </aside>
+        </article>
+        <article class="card_two">
+          <aside class="card_quantity">
+            <div class="minus">-</div>
+            <div class="quantity">0</div>
+            <div class="plus">+</div>
+          </aside>
+          <aside class="addToCart"><button>Add To Cart</button></aside>
+        </article>
+      </div>
+      <div class="card charcoal">
+        <article class="card_one">
+          <aside class="card_img">
+            <img
+              src="./assets/charcoal-3.png"
+              alt="A milky Waterfall in the mid of the rocks"
+            />
+          </aside>
+          <aside class="card_info">
+            <h2>A milky Waterfall in the mid of the rocks</h2>
+            <p>₹1900.00/-</p>
+          </aside>
+        </article>
+        <article class="card_two">
+          <aside class="card_quantity">
+            <div class="minus">-</div>
+            <div class="quantity">0</div>
+            <div class="plus">+</div>
+          </aside>
+          <aside class="addToCart"><button>Add To Cart</button></aside>
+        </article>
+      </div>
+      <div class="card pencil">
+        <article class="card_one">
+          <aside class="card_img">
+            <img src="./assets/pencil1.png" alt="A eagle awaits to hunt down" />
+          </aside>
+          <aside class="card_info">
+            <h2>A eagle awaits to hunt down</h2>
+            <p>₹900.00/-</p>
+          </aside>
+        </article>
+        <article class="card_two">
+          <aside class="card_quantity">
+            <div class="minus">-</div>
+            <div class="quantity">0</div>
+            <div class="plus">+</div>
+          </aside>
+          <aside class="addToCart"><button>Add To Cart</button></aside>
+        </article>
+      </div>
+      <div class="card pencil">
+        <article class="card_one">
+          <aside class="card_img">
+            <img src="./assets/pencil2.png" alt="A beautiful eye" />
+          </aside>
+          <aside class="card_info">
+            <h2>A beautiful human eye</h2>
+            <p>₹1000.00/-</p>
+          </aside>
+        </article>
+        <article class="card_two">
+          <aside class="card_quantity">
+            <div class="minus">-</div>
+            <div class="quantity">0</div>
+            <div class="plus">+</div>
+          </aside>
+          <aside class="addToCart"><button>Add To Cart</button></aside>
+        </article>
+      </div>
+      <div class="card pencil">
+        <article class="card_one">
+          <aside class="card_img">
+            <img src="./assets/pencil3.png" alt="A cute dog" />
+          </aside>
+          <aside class="card_info">
+            <h2>cute puppy</h2>
+            <p>₹2000.00/-</p>
+          </aside>
+        </article>
+        <article class="card_two">
+          <aside class="card_quantity">
+            <div class="minus">-</div>
+            <div class="quantity">0</div>
+            <div class="plus">+</div>
+          </aside>
+          <aside class="addToCart"><button>Add To Cart</button></aside>
+        </article>
+      </div>
+    </section>
+
+    <script src="Collections.js"></script>
+  </body>
+</html>

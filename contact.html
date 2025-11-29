@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+     <!-- Favicon -->
+  <link rel="icon" type="image/png" href="./assets/logo.png">
+</head>
+<body>
+    <!-- Navbar -->
+  <nav>
+    <aside id="nav_one">
+      <img src="./assets/logo.png" alt="logo" height="90" width="80">
+      <h1>Whispered Strokes 🎨 by Sab 👩</h1>
+    </aside>
+    <aside id="nav_two">
+      <a href="./home.html"><i class="fa-solid fa-house"></i> Home</a>
+      <a href="./about.html"><i class="fa-solid fa-user"></i> About</a>
+      <a href="./Collections.html"><i class="fa-solid fa-palette"></i> Collections</a>
+      <a href="./contact.html"><i class="fa-solid fa-phone"></i> Contact</a>
+    </aside>
+    <aside id="nav_three">
+      <i class="fa-solid fa-cart-shopping"></i>
+      <div id="cart-count">0</div>
+      <span id="cart-total">₹0.00</span>
+    </aside>
+  </nav>
+
+  <!-- Contact Section -->
+  <main id="contact_page">
+    <aside id="contact_one">
+      <h1>Contact</h1>
+      <form action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="01302b3d-7240-4bb3-90de-c6916d6c3f2f">
+
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" placeholder="Enter your name">
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" placeholder="Enter your email">
+
+        <label for="query">Enter your Message 👇:</label>
+        <textarea name="query" id="query" placeholder="Please drop your query here!"></textarea>
+
+        <input type="submit" value="Send">
+      </form>
+    </aside>
+
+    <aside id="contact_two">
+      <h1>Get in Touch</h1>
+      <h2>Visit My Art Gallery 🖼️</h2>
+      <p><i class="fa-solid fa-location-dot"></i> 1432, Chaitanyapuri, Kothapet, Hyderabad-500035</p>
+      <p><i class="fa-solid fa-phone"></i> +91 9876543210</p>
+      <p><i class="fa-solid fa-envelope"></i> sabirasyed160@gmail.com</p>
+      <img src="./assets/logo.png" alt="Whispered Strokes Logo">
+    </aside>
+  </main>
+</body>
+</html>
